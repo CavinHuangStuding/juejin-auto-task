@@ -1,5 +1,5 @@
-const api = require('../src/lib/api')('自己的Cookie')
+const api = require('../src/lib/api')('_ga=GA1.2.678613742.1647855206; __tea_cookie_tokens_2608=%257B%2522user_unique_id%2522%253A%25226901189438177723912%2522%252C%2522web_id%2522%253A%25226901189438177723912%2522%252C%2522timestamp%2522%253A1647430402969%257D; MONITOR_WEB_ID=d123692a-1663-4af6-ac17-f95680da0ee0; _tea_utm_cache_2608={%22utm_source%22:%22gold_browser_extension%22}; _gid=GA1.2.977653117.1648693316; s_v_web_id=verify_l1edfknt_sciSH4oh_byBr_4QUI_9jqL_GJ0G7sNueiUK; passport_csrf_token=5a37b2c9ed3967331f619a00d08da014; passport_csrf_token_default=5a37b2c9ed3967331f619a00d08da014; _tea_utm_cache_2018=undefined; MONITOR_DEVICE_ID=0b612ce8-e925-47d9-91be-3f798400cfe2; n_mh=ZMcf8COS3eQsQecNBcC4UbXQAhICGh7yWpcMIjPF9Hg; sid_guard=da53f59d3b5b218e53974c38de452efa%7C1648693325%7C5184000%7CMon%2C+30-May-2022+02%3A22%3A05+GMT; uid_tt=36e72dbe4517dbe85cc666446ae6b6ad; uid_tt_ss=36e72dbe4517dbe85cc666446ae6b6ad; sid_tt=da53f59d3b5b218e53974c38de452efa; sessionid=da53f59d3b5b218e53974c38de452efa; sessionid_ss=da53f59d3b5b218e53974c38de452efa; sid_ucp_v1=1.0.0-KGE3MzQxMzQwZGU5MmMxZDE3Y2E5ZGNlYTM0MTY2NTQ2MTQwZDM0YzcKFwiN-8C-_fXZBRDNoJSSBhiwFDgCQO8HGgJsZiIgZGE1M2Y1OWQzYjViMjE4ZTUzOTc0YzM4ZGU0NTJlZmE; ssid_ucp_v1=1.0.0-KGE3MzQxMzQwZGU5MmMxZDE3Y2E5ZGNlYTM0MTY2NTQ2MTQwZDM0YzcKFwiN-8C-_fXZBRDNoJSSBhiwFDgCQO8HGgJsZiIgZGE1M2Y1OWQzYjViMjE4ZTUzOTc0YzM4ZGU0NTJlZmE; tt_scid=i7CdJnxJsYAVmnF3ZpBz8HzUi4mVw1GG9yZOF3iDV4fCGVmPZm4hvxTY-Zpbq.9R3cf1')
 
-api.draw().then((data) => {
-  console.log(`抽奖成功，获得：${data.lottery_name}`)
+api.get_today_status().then((data) => {
+  console.log(`抽奖成功，获得：${data}`)
 })
